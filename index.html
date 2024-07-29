@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./build/tailwind.css">
     <link rel="stylesheet" href="./build/app.css">
+    
 </head>
+<!-- 
+
+Breakpoint prefix	Minimum width	CSS
+sm	640px	
+md	768px	
+lg	1024px	
+xl	1280px	
+-->
+
 <body>
-    <div class="">
-        <h1 class="text-center mt-14 mb-3 font-bold text-4xl font-mono">Live anywhere</h1>
-        <h2 class="text-center text-lg text-gray-500 ">Keep calm & travel on</h2>    
-        <div class="grid grid-cols-3 gap-10 max-w-7xl mx-auto">
+    <!-- <div class="">
+        <h1 class="text-center text-4xl sm:text-xl mt-35  mt-14 font-bold  font-mono">Live anywhere</h1>
+        <h2 class="text-center text-lg  text-gray-500 ">Keep calm & travel on</h2>    
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-y-4 max-w-7xl mx-auto ">
             <div class="mt-20">
                 <img class="w-50 h-96 rounded-xl object-cover" src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/v6bwf3e8qhdfhrgq7lv3/V%C3%A9C%C3%B4ngVi%C3%AAnGi%E1%BA%A3iTr%C3%ADIMGWorldsofAdventure%E1%BB%9FDubai.jpg" alt="">
                 <h3 class="text-center mt-7 text-xl font-bold">Enjoy the great cold</h3>
@@ -28,6 +39,54 @@
                 <span class="block text-center mt-4 text-s text-gray-500">6,789 properties</span>
             </div>
         </div>
+    </div> -->
+    <!-- <div class="group p-20 w-20 h-20 border border-[yellow]">
+        <button class="inline-block px-10 py-5 text-[#fff] lg:group-hover:bg-red-400 transition-colors bg-[#6a5af9] rounded-lg m-10">text</button>
+    </div>
+    <input type="text" class="border border-8 border-[black] mt-10 focus:bg-red-800"> -->
+
+    <label for="toggle" class="inline-block cursor-pointer toggle-switch ">
+        <input type="checkbox" name="" id="toggle" class="darkmode-input hidden">
+        <div class="w-24 h-10 fixed bottom-5 right-5 rounded-full border border-[#ccc] cursor-pointer z-50 p-[5px] transition-colors">
+            <div class="w-7 h-7 bg-[#ccc] rounded-full transition-transform darkmode-spinner"></div>
+        </div>
+    </label>
+    
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 ">
+        <div class="px-5 py-8 rounded-lg border border-[#eee] dark:bg-[#1e293b]">
+            <img src="https://cdn.dribbble.com/userupload/15744977/file/original-512bfb448da4f5d427143e26d1a3e9e3.png?resize=1024x768"
+                alt="" class="mb-5 max-w-[100px] mx-auto">
+            <h3 class="text-lg font-semibold mb-6 text-center text-[#2d2c4c] dark:text-[#dde9f9]">Recomden</h3>
+            <div class="text-sm leading-tight text-[#9898a1] dark:text-[#81b5d3] font-normal text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ducimus? Maxime quam praesentium
+                repudiandae deserunt aspernatur ipsam asperiores exercitationem labore, consectetur officia cum eligendi
+                rem nemo, molestiae dolore optio nisi. Distinctio illum atque sequi, sunt libero porro consectetur illo
+                tenetur?
+            </div>
+        </div>
     </div>
 </body>
-</html> 
+<script>
+//     const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
+// const currentTheme = localStorage.getItem('theme');
+// if (currentTheme) {
+//     document.documentElement.setAttribute('class', currentTheme);
+//     if (currentTheme === 'dark') {
+//         toggleSwitch.checked = true;
+//     }
+// }
+// function switchTheme(e) {
+//     if (e.target.checked) {
+//         document.documentElement.setAttribute('class', 'dark');
+//         localStorage.setItem('theme', 'dark');
+//     } else {
+//         document.documentElement.setAttribute('class', 'light');
+//         localStorage.setItem('theme', 'light');
+//     }
+// }
+// toggleSwitch.addEventListener('change', switchTheme);
+
+</script>
+<script src="main.js"></script>
+
+</html>

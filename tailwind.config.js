@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  mode: 'jit',
+  darkMode: 'selector',
+  purge: [
+    './**/*.html',
+    './**/*.{js,jsx,ts,tsx,vue}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '35': '35px',
+        '51':  '500px',
+      }
   },
   plugins: [],
+}
 }
 
